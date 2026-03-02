@@ -120,6 +120,12 @@ docker-compose exec web pytest -v
 pytest tests/ -v --cov=src
 ```
 
+## 1. Diseño de Base de Datos y Modelo de Datos
+
+- Se puede encontrar el diagrama entidad relación en el archivo [`er_diagram.md`](./docs/diagrams/er_diagram.md).
+- Se puede encontrar el script de inicialización de las entidades en el archivo [`init_schema.sql`](./infrastructure/database/init_schema.sql).
+- Se puede encontrar la justificación del modelo ER en [`0001-database-design.md`](./docs/adr/0001-database-design.md).
+
 ## 3. Entregables de Arquitectura e Infraestructura
 
 - **3.1 Diagrama de Arquitectura en AWS:** El diagrama detallado y su justificación técnica se encuentran en el archivo [`Architecture.md`](./Architecture.md).
